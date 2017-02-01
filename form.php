@@ -5,7 +5,7 @@
     <title>Formulaire</title>
   </head>
   <body>
-    <form class="" action="index.php" method="post">
+    <form class="" action="submit_post.php" method="POST">
       <div class="titleInput">
         <label for="title">Titre</label>
         <input type="text" name="title" value="">
