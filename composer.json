@@ -6,5 +6,7 @@
             "email": "lezinaxel@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "j4mie/idiorm": "^1.5"
+    }
 }
