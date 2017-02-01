@@ -1,4 +1,10 @@
-<?php require 'vendor/autoload.php' ?>
+<?php require 'vendor/autoload.php';
+
+ORM::configure('mysql:host=localhost;dbname=my_blog');
+ORM::configure('username','root');
+ORM::configure('password', 'root');
+
+?>
 
 <!DOCTYPE html>
 <html>
@@ -8,5 +14,17 @@
   </head>
   <body>
     <h1>Mon blog</h1>
+
+<?php
+
+$id1 = ORM::for_table('posts')-> WHERE('author', 'Pierre Martin')->find_one();
+  echo $id1->title . " ";
+  echo $id1->content . " ";
+  echo $id1->author . " " . $id1->created_at;
+  
+?>
+
+
+
   </body>
 </html>
