@@ -32,6 +32,9 @@ $id2 = ORM::for_table('posts')->WHERE('author', 'Allan')->find_one();
   echo $id2->author . " " . $id2->created_at;
 ?>
 
+<br>
+
+<a href="form.php"><button type="button" name="button">Ajouter un article</button></a>
 
 
   </body>
